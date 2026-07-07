@@ -64,9 +64,6 @@ body{
     cursor: pointer;
 }
 
-/* ========================================================
-   DISTRIBUCIÓN DEL DASHBOARD (2 COLUMNAS)
-   ======================================================== */
 .contenedor-menu {
     display: flex;
     max-width: 1400px;
@@ -75,7 +72,6 @@ body{
     gap: 30px;
 }
 
-/* Columna Lateral */
 .menu {
     width: 280px;
     background-color: rgba(248, 250, 252, 0.85);
@@ -144,7 +140,6 @@ body{
     font-weight: 600;
 }
 
-/* Iconos usando los sprites/items que tienes en tus imágenes */
 .icono-items-1, .icono-items-2 {
     width: 18px;
     height: 18px;
@@ -152,9 +147,6 @@ body{
     background-size: contain;
 }
 
-/* ========================================================
-   CONTENIDO Y CUADRÍCULA DE CURSOS
-   ======================================================== */
 .contenedor-principal {
     flex: 1;
 }
@@ -201,7 +193,6 @@ body{
     justify-content: center;
 }
 
-/* Tabs */
 .nav-mis-cursos {
     display: flex;
     gap: 16px;
@@ -222,7 +213,6 @@ body{
     border-bottom: 2px solid #4D7CFF;
 }
 
-/* Grilla Asíncrona */
 .cuadricula-cursos {
     display: flex;
     flex-wrap: wrap;
@@ -291,7 +281,6 @@ body{
     margin-top: auto;
 }
 
-/* Chat flotante */
 .caja-chat-flotante {
     position: fixed;
     bottom: 24px;
