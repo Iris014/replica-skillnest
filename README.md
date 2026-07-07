@@ -1,12 +1,12 @@
 # replica-skillnest
 skillnest - mis cursos
 
-Nombre del proyecto
-Objetivo
-Tecnologías utilizadas
-Captura del resultado
-Enlace a GitHub Pages
-Autor
+Nombre del proyecto: 
+Objetivo: 
+Tecnologías utilizadas: 
+Captura del resultado: 
+Enlace a GitHub Pages: 
+Autor: 
 
 
 Realizar al menos 5 commits significativos durante el desarrollo.

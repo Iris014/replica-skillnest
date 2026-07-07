@@ -5,5 +5,303 @@
 }
 
 body{
-    
+    width: 100%;
+    background: white url("../img/fondo.png") no-repeat center center;
+    background-size: 111%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1A202C;
+    min-height: 100vh;
 }
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    position: relative;
+    top: 0;
+    z-index: 500;
+}
+
+.barra-nav {
+    display: flex;
+    align-items: center;
+    padding: 14px 40px;
+    gap: 28px;
+}
+
+.barra-nav img {
+    max-width: 150px;
+}
+
+.pagina-nav {
+    text-decoration: none;
+    color: #4A5568;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 6px 0;
+}
+
+.pagina-nav:first-of-type {
+    color: #0062FF;
+    border-bottom: 3px solid #48BB78; /* Línea verde debajo de Escritorio */
+    margin-left: auto; /* Empuja los enlaces a la derecha */
+}
+
+.boton-version {
+    background: url('../img/nave-azul hhhh.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.boton-salir {
+    background-color: #0062FF;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ========================================================
+   DISTRIBUCIÓN DEL DASHBOARD (2 COLUMNAS)
+   ======================================================== */
+.contenedor-menu {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+    gap: 30px;
+}
+
+/* Columna Lateral */
+.menu {
+    width: 280px;
+    background-color: rgba(248, 250, 252, 0.85);
+    border-right: 1px solid rgba(226, 232, 240, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contenedor-perfil {
+    margin-bottom: 24px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.avatar-iniciales {
+    background-color: #3B82F6;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.nombre-perfil {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2D3748;
+}
+
+.menu-uno, .menu-dos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.titulo-menu-dos {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #A0AEC0;
+    margin: 20px 0 8px 12px;
+    letter-spacing: 0.5px;
+}
+
+.perfil-menu, .menu-mis-cursos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #4A5568;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+}
+
+.menu-activo {
+    background-color: #4D7CFF;
+    color: white;
+    font-weight: 600;
+}
+
+/* Iconos usando los sprites/items que tienes en tus imágenes */
+.icono-items-1, .icono-items-2 {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-size: contain;
+}
+
+/* ========================================================
+   CONTENIDO Y CUADRÍCULA DE CURSOS
+   ======================================================== */
+.contenedor-principal {
+    flex: 1;
+}
+
+.cabecera-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-seccion {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.notificacion {
+    position: relative;
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.notificacion img {
+    width: 24px;
+    display: block;
+}
+
+.notificacion::after {
+    content: attr(data-alertas);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #FF3B30;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tabs */
+.nav-mis-cursos {
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid #CBD5E0;
+    margin-bottom: 24px;
+}
+
+.nav-activo, .nav-mis-cursos-inactivo {
+    text-decoration: none;
+    padding: 10px 4px;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+.nav-activo {
+    color: #4D7CFF;
+    font-weight: 600;
+    border-bottom: 2px solid #4D7CFF;
+}
+
+/* Grilla Asíncrona */
+.cuadricula-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta-curso {
+    background-color: white;
+    width: calc(33.333% - 14px);
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-contenedor {
+    position: relative;
+    width: 100%;
+}
+
+.imagen-curso {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.etiqueta-coautor {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4D7CFF;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.info-curso {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.fecha-curso {
+    font-size: 0.75rem;
+    color: #A0AEC0;
+}
+
+.titulo-curso {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #2D3748;
+}
+
+.metricas-curso {
+    display: flex;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: auto;
+}
+
+/* Chat flotante */
+.caja-chat-flotante {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.chat-icono {
+    width: 56px;
+    height: 56px;
+}
+
