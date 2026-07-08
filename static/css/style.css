@@ -78,9 +78,6 @@ body{
     transition: background-color 0.2s;
 }
 
-/* ========================================================
-   ESTRUCTURA DE PANELES (LAYOUT)
-   ======================================================= */
 .main {
     display: flex;
 }
@@ -97,9 +94,6 @@ body{
     padding-top: 24px;
 }
 
-/* ========================================================
-   PERFIL DEL USUARIO (AVATAR AZUL)
-   ======================================================= */
 .contenedor-perfil {
     padding: 0 24px;
     margin-bottom: 24px;
@@ -131,9 +125,6 @@ body{
     color: #334155;
 }
 
-/* ========================================================
-   SECCIÓN MENU ESTUDIANTE (menu-uno)
-   ======================================================= */
 .menu-uno {
     display: flex;
     flex-direction: column;
@@ -154,12 +145,8 @@ body{
 .perfil-menu img {
     width: 18px;
     height: 18px;
-    opacity: 0.7;
 }
 
-/* ========================================================
-   SECCIÓN MENU INSTRUCTOR (menu-dos)
-   ======================================================= */
 .menu-dos {
     display: flex;
     flex-direction: column;
@@ -252,9 +239,6 @@ body{
     padding-bottom: 12px;
 }
 
-/* ========================================================
-   CUADRÍCULA DE CURSOS (TARJETAS DETALLADAS)
-   ======================================================= */
 .cuadricula-cursos {
     display: flex;
     flex-direction: row;
@@ -289,7 +273,6 @@ body{
 .imagen-curso {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .etiqueta-coautor {
@@ -350,9 +333,6 @@ body{
     gap: 4px;
 }
 
-/* ========================================================
-   BOTÓN DE CHAT FLOTANTE
-   ======================================================= */
 .chat-flotante {
     position: fixed;
     bottom: 24px;
