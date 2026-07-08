@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +7,77 @@
     <meta name="author" content="Iris Ccallomamani">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-
 <body>
-    <header class="header">
-        <nav class="barra-nav">
-            <img src="static/img/logo-skillnest.png" alt="logo de skillnest">
-            <a href="#" class="pagina-nav">Escritorio</a>
-            <a href="#" class="pagina-nav">Contacto</a>
-            <button class="boton-version">   </button>
-            <button class="boton-salir">Salir</button>
-        </nav>
-    </header>
 
-    <main class="main">
-        <section class="contenedor-menu">
+    <div class="header">
+        <div class="barra-nav">
+            <div class="logotipo">
+                <img src="static/img/logo-skillnest.png" alt="Skillnest" class="logo-img">
+            </div>
+            <div class="navegacion-superior">
+                <a href="#" class="pagina-nav-activa">Escritorio</a>
+                <a href="#" class="pagina-nav">Contacto</a>
+                <button class="boton-version">
+                    <img src="static/img/botones-skillnest.png" alt="Modo">
+                </button>
+                <button class="boton-salir">Salir</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="contenedor-menu">
             
             <div class="menu">
                 <div class="contenedor-perfil">
                     <div class="perfil">
-                        <img src="static/img/perfil.png" alt="Foto de perfil">
-                        <h1 class="nombre-perfil">Danny Hernandez</h1>
+                        <div class="avatar-iniciales">DH</div>
+                        <span class="nombre-perfil">Danny Hernandez</span>
                     </div>
                 </div>
 
                 <div class="menu-uno">
                     <a href="#" class="perfil-menu">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Escritorio</a>
+                        <img src="static/icons/items(1).png" alt=""> Escritorio
+                    </a>
                     <a href="#" class="perfil-menu">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Mi perfil</a>
+                        <img src="static/icons/items(2).png" alt=""> Mi perfil
+                    </a>
                     <a href="#" class="perfil-menu">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Cursos inscritos</a>
+                        <img src="static/icons/items(3).png" alt=""> Cursos inscritos
+                    </a>
                     <a href="#" class="perfil-menu">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Mis intentos de cuestionarios</a>
+                        <img src="static/icons/items(4).png" alt=""> Mis intentos de cuestionarios
+                    </a>
                     <a href="#" class="perfil-menu">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Pregunta y respuesta</a>
+                        <img src="static/icons/items(5).png" alt=""> Pregunta y respuesta
+                    </a>
                 </div>
-                
+
                 <div class="menu-dos">
-                    <h3 class="titulo-menu-dos">Instructor</h3>
-                    <a href="#" class="menu-mis-cursos menu-activo"><span class="icono"></span>Mis cursos</a>
+                    <span class="titulo-menu-dos">Instructor</span>
+                    <a href="#" class="menu-mis-cursos menu-activo">
+                        <img src="static/img/nave-azul.jpg" alt=""> Mis cursos
+                    </a>
                     <a href="#" class="menu-mis-cursos">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Anuncios</a>
+                        <img src="static/icons/items(6).png" alt=""> Anuncios
+                    </a>
                     <a href="#" class="menu-mis-cursos">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Intentos del cuestionario</a>
+                        <img src="static/icons/items(7).png" alt=""> Intentos del cuestionario
+                    </a>
                     <a href="#" class="menu-mis-cursos">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Tareas</a>
+                        <img src="static/icons/items(8).png" alt=""> Tareas
+                    </a>
                     <a href="#" class="menu-mis-cursos">
-                        <img src="static/icons/" alt="">
-                        <span class="icono"></span>Analytics</a>
+                        <img src="static/icons/items(9).png" alt=""> Analytics
+                    </a>
                 </div>
             </div>
 
             <div class="contenedor-principal">
                 <div class="cabecera-contenido">
-                    <h2 class="titulo-seccion">Mis cursos</h2>
-                    <div class="notificacion" data-alertas="4">
+                    <h1 class="titulo-seccion">Mis cursos</h1>
+                    <div class="notificacion">
                         <img src="static/img/campana.png" alt="Notificaciones">
                     </div>
                 </div>
@@ -86,55 +93,61 @@
                     
                     <div class="tarjeta-curso">
                         <div class="imagen-contenedor">
-                            <img src="static/img/python-uno.jpg" class="imagen-curso" alt="Python Full Stack para Colegios">
+                            <img src="static/img/imagen-1.png" alt="Python" class="imagen-curso">
                             <span class="etiqueta-coautor">Co-autor</span>
                         </div>
                         <div class="info-curso">
-                            <span class="fecha-curso">14 de abril de 2026 16:53</span>
-                            <h3 class="titulo-curso">Python Full Stack para Colegios (b2u-4-medio-vate-vicente-huidobro-2026)</h3>
+                            <p class="fecha-curso">14 de abril de 2026 16:53</p>
+                            <h2 class="titulo-curso">Python Full Stack para Colegios (b2u-4-medio-vate-vicente-huidobro-2026)</h2>
                             <div class="metricas-curso">
-                                <span class="horas">160h</span>
-                                <span class="estudiantes">40</span>
+                                <span class="duracion">⏱ 160h</span>
+                                <span class="estudiantes">👤 40</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Tarjeta 2 -->
                     <div class="tarjeta-curso">
                         <div class="imagen-contenedor">
-                            <img src="static/img/web-fundamentos.jpg" class="imagen-curso" alt="Fundamentos de la Web para Colegios">
+                            <img src="static/img/imagen-2.png" alt="Web" class="imagen-curso">
                             <span class="etiqueta-coautor">Co-autor</span>
                         </div>
                         <div class="info-curso">
-                            <span class="fecha-curso">14 de abril de 2026 16:53</span>
-                            <h3 class="titulo-curso">Fundamentos de la Web para Colegios (b2u-3-medio-vate-vicente-huidobro-2026)</h3>
+                            <p class="fecha-curso">14 de abril de 2026 16:53</p>
+                            <h2 class="titulo-curso">Fundamentos de la Web para Colegios (b2u-3-medio-vate-vicente-huidobro-2026)</h2>
                             <div class="metricas-curso">
-                                <span class="horas">80h</span>
-                                <span class="estudiantes">39</span>
+                                <span class="duracion">⏱ 80h</span>
+                                <span class="estudiantes">👤 39</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Tarjeta 3 -->
                     <div class="tarjeta-curso">
                         <div class="imagen-contenedor">
-                            <img src="static/img/python-dos.jpg" class="imagen-curso" alt="Python Full Stack 2025">
+                            <img src="static/img/imagen-3.png" alt="Python" class="imagen-curso">
                             <span class="etiqueta-coautor">Co-autor</span>
                         </div>
                         <div class="info-curso">
-                            <span class="fecha-curso">16 de diciembre de 2025 12:36</span>
-                            <h3 class="titulo-curso">Python Full Stack (b2u-3-medio-vate-vicente-huidobro-2025)</h3>
+                            <p class="fecha-curso">16 de diciembre de 2025 12:36</p>
+                            <h2 class="titulo-curso">Python Full Stack (b2u-3-medio-vate-vicente-huidobro-2025)</h2>
                             <div class="metricas-curso">
-                                <span class="horas">160h</span>
+                                <span class="duracion">⏱ 160h</span>
                             </div>
                         </div>
                     </div>
 
-                </div> </div> </section>
-    </main>
+                </div>
+            </div>
 
-    <button class="chat-flotante" aria-label="Abrir chat de ayuda"></button>
+        </div>
+    </div>
 
-    <footer class="footer">
-        </footer>
+    <!-- BOTÓN CHAT FLOTANTE -->
+    <button class="chat-flotante">
+        <img src="static/img/chat-icon.png" alt="Chat">
+    </button>
+
+    <div class="footer"></div>
 </body>
-
 </html>

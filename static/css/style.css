@@ -14,283 +14,368 @@ body{
 }
 
 .header {
-    border-bottom: 1px solid #E2E8F0;
-    position: relative;
-    top: 0;
-    z-index: 500;
+    padding: 12px 30px;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .barra-nav {
     display: flex;
     align-items: center;
-    padding: 14px 40px;
-    gap: 28px;
+    justify-content: space-between;
 }
 
-.barra-nav img {
-    max-width: 150px;
+.logo-img {
+    height: 78px;
+}
+
+.navegacion-superior {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .pagina-nav {
     text-decoration: none;
-    color: #4A5568;
+    color: #64748b;
     font-weight: 500;
-    font-size: 0.95rem;
-    padding: 6px 0;
+    font-size: 14px;
+    transition: color 0.2s;
 }
 
-.pagina-nav:first-of-type {
-    color: #0062FF;
-    border-bottom: 3px solid #48BB78; /* Línea verde debajo de Escritorio */
-    margin-left: auto; /* Empuja los enlaces a la derecha */
+.pagina-nav-activa {
+    text-decoration: none;
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 3px solid #10b981;
+    padding-bottom: 20px;
 }
 
 .boton-version {
-    background: url('../img/nave-azul hhhh.png') no-repeat center;
-    background-size: contain;
     border: none;
-    width: 28px;
-    height: 28px;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-version img {
+    width: 20px;
+    height: 20px;
 }
 
 .boton-salir {
-    background-color: #0062FF;
-    color: white;
+    background-color: #2563eb;
+    color: #ffffff;
     border: none;
     padding: 8px 20px;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+/* ========================================================
+   ESTRUCTURA DE PANELES (LAYOUT)
+   ======================================================= */
+.main {
+    display: flex;
 }
 
 .contenedor-menu {
     display: flex;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 24px;
-    gap: 30px;
+    width: 100%;
 }
 
 .menu {
-    width: 280px;
-    background-color: rgba(248, 250, 252, 0.85);
-    border-right: 1px solid rgba(226, 232, 240, 0.5);
-    padding: 20px;
-    border-radius: 12px;
+    width: 260px;
+    min-height: 100vh;
+    border-right: 1px solid #e2e8f0;
+    padding-top: 24px;
 }
 
+/* ========================================================
+   PERFIL DEL USUARIO (AVATAR AZUL)
+   ======================================================= */
 .contenedor-perfil {
+    padding: 0 24px;
     margin-bottom: 24px;
 }
 
 .perfil {
     display: flex;
     align-items: center;
-    gap: 14px;
 }
 
 .avatar-iniciales {
-    background-color: #3B82F6;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .nombre-perfil {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #2D3748;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 12px;
+    color: #334155;
 }
 
-.menu-uno, .menu-dos {
+/* ========================================================
+   SECCIÓN MENU ESTUDIANTE (menu-uno)
+   ======================================================= */
+.menu-uno {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.perfil-menu {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #64748b;
+    gap: 12px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.perfil-menu img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+/* ========================================================
+   SECCIÓN MENU INSTRUCTOR (menu-dos)
+   ======================================================= */
+.menu-dos {
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo-menu-dos {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: #A0AEC0;
-    margin: 20px 0 8px 12px;
-    letter-spacing: 0.5px;
+    font-size: 12px;
+    color: #94a3b8;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
-.perfil-menu, .menu-mis-cursos {
+.menu-mis-cursos {
     display: flex;
     align-items: center;
-    gap: 12px;
+    padding: 12px 24px;
     text-decoration: none;
-    color: #4A5568;
-    padding: 10px 12px;
-    font-size: 0.9rem;
-    border-radius: 8px;
+    color: #64748b;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.menu-dos img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
 }
 
 .menu-activo {
-    background-color: #4D7CFF;
-    color: white;
-    font-weight: 600;
-}
-
-.icono-items-1, .icono-items-2 {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    background-size: contain;
+    background-color: #4f46e5;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .contenedor-principal {
-    flex: 1;
+    flex-grow: 1;
+    padding: 30px 40px;
 }
 
 .cabecera-contenido {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .titulo-seccion {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
 }
 
 .notificacion {
     position: relative;
-    background-color: white;
-    border: 1px solid #E2E8F0;
-    padding: 8px;
-    border-radius: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
 .notificacion img {
-    width: 24px;
-    display: block;
-}
-
-.notificacion::after {
-    content: attr(data-alertas);
-    position: absolute;
-    top: -4px;
-    right: -4px;
-    background-color: #FF3B30;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
 }
 
 .nav-mis-cursos {
     display: flex;
-    gap: 16px;
-    border-bottom: 1px solid #CBD5E0;
+    gap: 24px;
     margin-bottom: 24px;
-}
-
-.nav-activo, .nav-mis-cursos-inactivo {
-    text-decoration: none;
-    padding: 10px 4px;
-    font-size: 0.9rem;
-    color: #718096;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .nav-activo {
-    color: #4D7CFF;
+    text-decoration: none;
+    color: #4f46e5;
     font-weight: 600;
-    border-bottom: 2px solid #4D7CFF;
+    font-size: 14px;
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 12px;
 }
 
+.nav-mis-cursos-inactivo {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+/* ========================================================
+   CUADRÍCULA DE CURSOS (TARJETAS DETALLADAS)
+   ======================================================= */
 .cuadricula-cursos {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 24px;
 }
 
 .tarjeta-curso {
-    background-color: white;
-    width: calc(33.333% - 14px);
-    min-width: 280px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    width: 310px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-curso:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .imagen-contenedor {
-    position: relative;
     width: 100%;
+    height: 160px;
+    position: relative;
+    background-color: #0f172a;
 }
 
 .imagen-curso {
     width: 100%;
-    display: block;
+    height: 100%;
     object-fit: cover;
 }
 
 .etiqueta-coautor {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #4D7CFF;
-    color: white;
-    font-size: 0.75rem;
+    top: 12px;
+    right: 12px;
+    color: #ffffff;
+    background-color: #4f46e5;
+    font-size: 11px;
     font-weight: 600;
-    padding: 4px 8px;
+    padding: 3px 10px;
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .info-curso {
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    flex: 1;
+    flex-grow: 1;
 }
 
 .fecha-curso {
-    font-size: 0.75rem;
-    color: #A0AEC0;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .titulo-curso {
-    font-size: 0.95rem;
+    font-size: 15px;
     font-weight: 600;
-    line-height: 1.4;
-    color: #2D3748;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
 }
 
 .metricas-curso {
+    font-size: 13px;
+    color: #64748b;
     display: flex;
-    gap: 12px;
-    font-size: 0.8rem;
-    color: #718096;
-    margin-top: auto;
+    gap: 16px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 12px;
 }
 
-.caja-chat-flotante {
+.duracion {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.estudiantes {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ========================================================
+   BOTÓN DE CHAT FLOTANTE
+   ======================================================= */
+.chat-flotante {
     position: fixed;
     bottom: 24px;
     right: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0ea5e9;
     cursor: pointer;
-    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+    transition: background-color 0.2s;
 }
 
-.chat-icono {
-    width: 56px;
-    height: 56px;
+.chat-flotante img {
+    width: 24px;
+    height: 24px;
 }
 
+.footer {
+    width: 100%;
+    height: 40px;
+}
